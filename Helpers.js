@@ -1,7 +1,8 @@
 function Radians(angle){return angle*(Math.PI/180)}
 
 var viewmode = {
-    normals:false
+    normals:false,
+    outlines:false
 };
 function enableKeyboardControls(){
     //Enables use of keyboard shortcuts
@@ -24,6 +25,9 @@ document.addEventListener('keydown',function(e){
         case 78:
             viewmode.normals=!viewmode.normals;
             break;
+        case 79:
+           viewmode.outlines=!viewmode.outlines;
+           break;
         default:
             break;
     }
